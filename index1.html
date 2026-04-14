@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apple Store India — Shop the latest iPhone 17 Pro, MacBook Pro M5, Apple Watch Series 11, AirPods Max 2, and iPad Air. Free delivery across India.">
+    <meta name="theme-color" content="#fbfbfd">
+    <title>Apple (India) — Shop iPhone, Mac, iPad, Watch, AirPods &amp; more</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <header>
+        <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-inner">
+                <!-- Apple Logo -->
+                <a href="#" class="nav-logo" id="nav-logo-link" aria-label="Apple India Home">
+                    <svg class="apple-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 1000" aria-hidden="true">
+                        <path
+                            d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.4 0 665.2 0 545.5c0-208.2 135.3-318.5 268.9-318.5 71 0 130.2 46.8 174.9 46.8 42.8 0 110.3-50.2 190.2-50.2 30.7 0 108.2 2.6 163.1 74.1zm-218.8-89.5c-23.2 26-66 45.1-102.2 45.1-5.2 0-10.4-.5-15.1-1.5-1.2-6-1.9-13.4-1.9-20.8 0-19.5 6.5-42.2 22.1-59.6 15.2-16.7 37.9-30.8 66-36.8 5.2 0 10.4.5 15.1 1.5 1.2 6.5 1.9 13.9 1.9 20.8 0 22.1-7.8 44.8-85.9 51.3z" />
+                    </svg>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <ul class="nav-links" id="nav-links-list">
+                    <li><a href="#store-section" class="nav-link" id="nav-store">Store</a></li>
+                    <li><a href="#mac-section" class="nav-link" id="nav-mac">Mac</a></li>
+                    <li><a href="#ipad-section" class="nav-link" id="nav-ipad">iPad</a></li>
+                    <li><a href="#iphone-section" class="nav-link" id="nav-iphone">iPhone</a></li>
+                    <li><a href="#watch-section" class="nav-link" id="nav-watch">Watch</a></li>
+                    <li><a href="#airpods-section" class="nav-link" id="nav-airpods">AirPods</a></li>
+                    <li><a href="#" class="nav-link" id="nav-support">Support</a></li>
+                </ul>
+
+                <!-- Nav Icons -->
+                <div class="nav-icons">
+                    <!-- Search Icon -->
+                    <button class="nav-icon-btn" id="search-toggle-btn" aria-label="Search apple.com"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M7.4 0a7.4 7.4 0 015.76 12.115l3.865 3.865a.5.5 0 01-.707.707L12.453 12.82A7.4 7.4 0 117.4 0zm0 1a6.4 6.4 0 100 12.8A6.4 6.4 0 007.4 1z" />
+                        </svg>
+                    </button>
+                    <!-- Bag Icon -->
+                    <button class="nav-icon-btn bag-btn" id="bag-toggle-btn" aria-label="Shopping Bag"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M7 2a2 2 0 00-2 2v.5H2.5A1.5 1.5 0 001 6v8.5A1.5 1.5 0 002.5 16h12A1.5 1.5 0 0016 14.5V6a1.5 1.5 0 00-1.5-1.5H12V4a2 2 0 00-2-2H7zm4 2v.5H6V4a1 1 0 011-1h2a1 1 0 011 1zM2 6.5a.5.5 0 01.5-.5h12a.5.5 0 01.5.5V14.5a.5.5 0 01-.5.5h-12a.5.5 0 01-.5-.5V6.5z" />
+                        </svg>
+                        <span class="bag-count" id="bag-count" aria-live="polite">0</span>
+                    </button>
+                    <!-- Hamburger -->
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <span class="ham-bar" id="ham-bar-1"></span>
+                        <span class="ham-bar" id="ham-bar-2"></span>
+                        <span class="ham-bar" id="ham-bar-3"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar" id="search-bar" aria-hidden="true">
+                <div class="search-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                        fill="currentColor" aria-hidden="true" class="search-icon-inline">
+                        <path fill-rule="evenodd"
+                            d="M7.4 0a7.4 7.4 0 015.76 12.115l3.865 3.865a.5.5 0 01-.707.707L12.453 12.82A7.4 7.4 0 117.4 0zm0 1a6.4 6.4 0 100 12.8A6.4 6.4 0 007.4 1z" />
+                    </svg>
+                    <input type="search" placeholder="Search apple.com" id="search-input" aria-label="Search apple.com">
+                    <button class="search-cancel" id="search-cancel-btn">Cancel</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="#store-section" class="mobile-nav-link" id="mob-store">Store</a></li>
+                    <li><a href="#mac-section" class="mobile-nav-link" id="mob-mac">Mac</a></li>
+                    <li><a href="#ipad-section" class="mobile-nav-link" id="mob-ipad">iPad</a></li>
+                    <li><a href="#iphone-section" class="mobile-nav-link" id="mob-iphone">iPhone</a></li>
+                    <li><a href="#watch-section" class="mobile-nav-link" id="mob-watch">Watch</a></li>
+                    <li><a href="#airpods-section" class="mobile-nav-link" id="mob-airpods">AirPods</a></li>
+                    <li><a href="#" class="mobile-nav-link" id="mob-support">Support</a></li>
+                </ul>
+                <div class="mobile-divider"></div>
+                <div class="mobile-extras">
+                    <a href="#" class="mobile-extra-link" id="mob-account">Account</a>
+                    <a href="#" class="mobile-extra-link" id="mob-wishlist">Wishlist</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <section class="hero-section reveal-section" id="iphone-section" aria-label="iPhone 17 Pro Hero">
+        <div class="hero-eyebrow fade-in-up">New</div>
+        <h1 class="hero-title fade-in-up delay-1">iPhone 17 Pro</h1>
+        <div class="hero-img-wrap fade-in-up delay-2">
+            <img src="images/iphone_17_pro.webp" alt="iPhone 17 Pro in titanium finish" class="hero-img"
+                id="hero-product-img" loading="eager">
+            <div class="hero-img-glow"></div>
+        </div>
+        <p class="hero-subtitle fade-in-up delay-3">Titanium. A19 Pro. All-in.</p>
+        <div class="hero-price fade-in-up delay-4">Starting at ₹1,34,900</div>
+        <div class="hero-cta fade-in-up delay-5">
+            <a href="#" class="btn-primary" id="hero-buy-btn">Buy</a>
+            <a href="#" class="btn-ghost" id="hero-learn-btn">Learn more</a>
+        </div>
+        <button class="hero-add-bag add-to-bag-btn fade-in-up delay-6" id="hero-add-bag-btn"
+            data-product="iPhone 17 Pro" data-price="₹1,34,900" data-img="images/iphone_17_pro.webp">+ Add to
+            Bag</button>
+    </section>
+
+
+    <!-- ═══════════════ PRODUCT GRID ═══════════════ -->
+    <main class="product-grid-section" aria-label="Product categories">
+
+        <!-- Row 1: Mac + iPad -->
+        <div class="product-grid grid-2col" id="mac-section">
+
+            <!-- MacBook Pro -->
+            <article class="grid-card dark-card reveal-section" id="macbook-card" aria-label="MacBook Pro">
+                <div class="card-body card-body-top">
+                    <p class="card-eyebrow">New</p>
+                    <h2 class="card-title">MacBook Pro</h2>
+                    <p class="card-price">From ₹1,99,900</p>
+                </div>
+                <div class="card-img-wrap">
+                    <img src="images/macbook_pro_m5.png" alt="MacBook Pro with M5 chip" class="card-img"
+                        id="macbook-img" loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">M5 Pro. Next-level power.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="macbook-buy-btn">Buy</a>
+                        <a href="#" class="btn-ghost-sm" id="macbook-learn-btn">Learn more</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="macbook-add-bag-btn" data-product="MacBook Pro M5"
+                        data-price="₹1,99,900" data-img="images/macbook_pro_m5.png">Add to Bag</button>
+                </div>
+            </article>
+
+            <!-- iPad Air -->
+            <article class="grid-card light-card reveal-section" id="ipad-section" aria-label="iPad Air">
+                <div class="card-body card-body-top">
+                    <p class="card-eyebrow">New</p>
+                    <h2 class="card-title">iPad Air</h2>
+                    <p class="card-price">From ₹74,900</p>
+                </div>
+                <div class="card-img-wrap">
+                    <img src="images/ipad_air_m3.png" alt="iPad Air M3" class="card-img" id="ipad-img" loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">Supercharged by M3.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="ipad-buy-btn">Buy</a>
+                        <a href="#" class="btn-ghost-sm" id="ipad-learn-btn">Learn more</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="ipad-add-bag-btn" data-product="iPad Air M3"
+                        data-price="₹74,900" data-img="images/ipad_air_m3.png">Add to Bag</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- Row 2: Watch + AirPods (side by side) -->
+        <div class="product-grid grid-2col" id="watch-section">
+
+            <!-- Apple Watch -->
+            <article class="grid-card gradient-card reveal-section" id="watch-card" aria-label="Apple Watch Series 11">
+                <div class="card-body card-body-top">
+                    <h2 class="card-title">Apple Watch</h2>
+                    <p class="card-eyebrow eyebrow-red">SERIES 11</p>
+                    <p class="card-price">From ₹46,900</p>
+                </div>
+                <div class="card-img-wrap">
+                    <img src="images/apple_watch_series11.png" alt="Apple Watch Series 11" class="card-img"
+                        id="watch-img" loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">Thinner. Smarter. Healthier.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="watch-buy-btn">Buy</a>
+                        <a href="#" class="btn-ghost-sm" id="watch-learn-btn">Learn more</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="watch-add-bag-btn"
+                        data-product="Apple Watch Series 11" data-price="₹46,900"
+                        data-img="images/apple_watch_series11.png">Add to Bag</button>
+                </div>
+            </article>
+
+            <!-- AirPods Max -->
+            <article class="grid-card sky-card reveal-section" id="airpods-section" aria-label="AirPods Max 2">
+                <div class="card-body card-body-top">
+                    <h2 class="card-title">AirPods Max 2</h2>
+                    <p class="card-price">From ₹66,900</p>
+                </div>
+                <div class="card-img-wrap">
+                    <img src="images/airpods_max_2.png" alt="AirPods Max 2" class="card-img" id="airpods-img"
+                        loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">H2 chip. Live Translation.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="airpods-buy-btn">Buy</a>
+                        <a href="#" class="btn-ghost-sm" id="airpods-learn-btn">Learn more</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="airpods-add-bag-btn" data-product="AirPods Max 2"
+                        data-price="₹66,900" data-img="images/airpods_max_2.png">Add to Bag</button>
+                </div>
+            </article>
+        </div>
+
+
+        <!-- Row 4: 3-col mini grid -->
+        <div class="product-grid grid-3col" id="accessory-grid" aria-label="Accessories">
+
+            <!-- AirPods 4 -->
+            <article class="grid-card mini-card soft-white reveal-section" id="airpods4-card" aria-label="AirPods 4">
+                <div class="card-body card-body-top">
+                    <h2 class="card-title card-title-sm">AirPods 4</h2>
+                    <p class="card-price">From ₹18,500</p>
+                </div>
+                <div class="card-img-wrap mini-img-wrap">
+                    <img src="images/airpods_4.png" alt="AirPods 4 with charging case" class="card-img"
+                        id="airpods4-img" loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">Active Noise Cancellation.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="airpods4-buy-btn">Buy</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="airpods4-add-bag-btn" data-product="AirPods 4"
+                        data-price="₹18,500" data-img="images/airpods_4.png">Add to Bag</button>
+                </div>
+            </article>
+
+            <!-- Apple TV 4K -->
+            <article class="grid-card mini-card dark-2 reveal-section" id="appletv-card" aria-label="Apple TV 4K">
+                <div class="card-body card-body-top">
+                    <h2 class="card-title card-title-sm">Apple TV 4K</h2>
+                    <p class="card-price">From ₹17,900</p>
+                </div>
+                <div class="card-img-wrap mini-img-wrap">
+                    <img src="images/apple_tv_4k.png" alt="Apple TV 4K" class="card-img" id="appletv-img"
+                        loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">The ultimate streaming box.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="appletv-buy-btn">Buy</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="appletv-add-bag-btn" data-product="Apple TV 4K"
+                        data-price="₹17,900" data-img="images/apple_tv_4k.png">Add to Bag</button>
+                </div>
+            </article>
+
+            <!-- HomePod mini -->
+            <article class="grid-card mini-card soft-gray reveal-section" id="homepod-card" aria-label="HomePod mini">
+                <div class="card-body card-body-top">
+                    <h2 class="card-title card-title-sm">HomePod mini</h2>
+                    <p class="card-price">From ₹10,900</p>
+                </div>
+                <div class="card-img-wrap mini-img-wrap">
+                    <img src="images/homepod_mini.png" alt="HomePod mini" class="card-img" id="homepod-img"
+                        loading="lazy">
+                </div>
+                <p class="card-subtitle card-desc-below">Room-filling sound. Siri ready.</p>
+                <div class="card-body card-body-btns">
+                    <div class="card-cta">
+                        <a href="#" class="btn-primary-sm" id="homepod-buy-btn">Buy</a>
+                    </div>
+                    <button class="btn-add-bag add-to-bag-btn" id="homepod-add-bag-btn" data-product="HomePod mini"
+                        data-price="₹10,900" data-img="images/homepod_mini.png">Add to Bag</button>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-inner">
+            <p class="footer-region">Copyright © 2026 Apple Inc. All rights reserved.</p>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#" id="footer-privacy">Privacy Policy</a>
+                <a href="#" id="footer-terms">Terms of Use</a>
+                <a href="#" id="footer-sales">Sales and Refunds</a>
+                <a href="#" id="footer-legal">Legal</a>
+                <a href="#" id="footer-sitemap">Site Map</a>
+            </nav>
+            <p class="footer-country">🇮🇳 India</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ SHOPPING BAG SIDEBAR ═══════════════ -->
+    <aside class="bag-sidebar" id="bag-sidebar" role="complementary" aria-label="Shopping Bag" aria-hidden="true">
+        <div class="bag-sidebar-header">
+            <h2 class="bag-sidebar-title">Shopping Bag</h2>
+            <button class="bag-close-btn" id="bag-close-btn" aria-label="Close shopping bag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"
+                    aria-hidden="true">
+                    <path
+                        d="M14.354 4.354a.5.5 0 00-.707-.707L9 8.293 4.354 3.647a.5.5 0 10-.707.707L8.293 9l-4.646 4.646a.5.5 0 00.707.707L9 9.707l4.646 4.646a.5.5 0 10.707-.707L9.707 9l4.647-4.646z" />
+                </svg>
+            </button>
+        </div>
+        <div class="bag-items-wrap" id="bag-items-wrap">
+            <!-- Items injected by JS -->
+            <div class="bag-empty" id="bag-empty-state">
+                <div class="bag-empty-icon" aria-hidden="true">🛍️</div>
+                <p>Your bag is empty.</p>
+                <p class="bag-empty-sub">Shop above and add items.</p>
+            </div>
+        </div>
+        <div class="bag-footer" id="bag-sidebar-footer">
+            <div class="bag-summary">
+                <span class="bag-summary-label">Subtotal</span>
+                <span class="bag-total" id="bag-total">₹0</span>
+            </div>
+            <p class="bag-tax-note">Taxes and shipping calculated at checkout.</p>
+            <button class="btn-checkout" id="checkout-btn">Check Out</button>
+            <button class="btn-continue" id="continue-shopping-btn">Continue Shopping</button>
+        </div>
+    </aside>
+
+    <!-- Dark Overlay -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <!-- ═══════════════ TOAST NOTIFICATION ═══════════════ -->
+    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+            aria-hidden="true">
+            <path
+                d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.78-9.72a.75.75 0 00-1.06-1.06L7 9.94 5.28 8.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.06 0l4.25-4.25z" />
+        </svg>
+        <span id="toast-msg">Added to Bag!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
